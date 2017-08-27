@@ -1,0 +1,319 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+ul
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*menu*/
+.clearfix
+{
+    clear: both;
+}
+#header
+{
+    background-color: #353f46;
+    padding:50px 0 50px 0; 
+}
+#logo 
+{
+    float: left;
+}
+a.logo span{
+    float: left;
+    color: #fff;
+    width: 380px;
+    text-transform: uppercase;
+}
+#menu
+{
+    float: right;
+    text-align: right;
+    display: none;
+    margin-top: 15px;
+}
+#menu-toggle
+{
+    width:30px;
+    float: right;
+    display: block;
+    margin-right:15px;
+}
+@media(min-width:768px)
+{
+    #menu-toggle
+    {
+        display: none;
+    }
+}
+@media(min-width:768px)
+{
+    #menu
+    {
+        display: block;
+        margin-top: 0;
+    }
+}
+#menu-toggle .line
+{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+#menu li
+{
+    display: inline-block;
+    margin-right: 20px;
+    width: 100%;
+    text-align: center;
+    padding-top:8px;
+}
+@media(min-width:768px)
+{
+    #menu li
+    {
+        width: auto;
+        text-align: left;
+    }
+}
+@media(min-width:768px)
+{
+    #menu li
+    {
+        margin-right: 40px;
+    }
+}
+#menu li:last-child
+{
+    margin-right: 0;
+}
+#menu li a
+{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight:700;
+}
+#menu li a:hover
+{
+    color: #000;
+}
+#features
+{
+    background-color: #4bcaff;
+    padding: 109px 0;
+    margin-bottom: 150px;
+}
+.inner img
+{
+    margin-bottom: 20px;
+}
+.inner h2
+{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight:700;
+    margin-bottom: 20px;
+}
+.inner p
+{
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    font-size: 12px;
+    line-height: 18px;  
+    font-family: 'playfair_displayregular';
+    padding-right:20px;
+}
+.inner-images img
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.inner-images-1 img
+{
+    width: 100%;
+    height: auto;
+}
+.inner-images-1
+{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: top 1ms linear;
+}
+
+.overlay
+{
+    position: absolute;
+    top:100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(66, 75, 83, 0.9);
+}
+.inner-images-1:hover .overlay
+{
+    top:0;
+}
+#picture
+{
+    
+    padding: 80px 0;
+    background-color: #515f67;
+}
+#picture ul 
+{
+    margin-bottom: 150px;
+}
+.inner-images-2 img
+{
+    width:100%;
+    height: auto;
+}
+.inner-text h3
+{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 30px;
+    line-height: 24px;
+    font-weight:700;
+    margin-bottom: 50px;
+}
+.inner-text p
+{
+    font-family: 'playfair_displayregular';
+    color:#fff;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+
+.contact-info
+{
+    width: 585px;
+}
+.contact-info h2
+{
+    font-size:38px;
+    line-height: 84px;
+    font-family: 'playfair_displayregular';
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact-info p
+{
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+    margin: 0 0 24px 0;
+}
+#menu1 li
+{
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+}
+#menu1 li strong
+{
+    color: #fff;
+    padding-right: 5px;
+}
+#imput-form
+{
+    margin-top:25px;
+    margin-bottom: 30px;
+    width:234px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #858585;
+    font-weight: 400;
+
+    border: none;
+    margin-right:30px;
+}
+#imput-form1
+{
+     margin-top:25px;
+     margin-bottom: 30px;
+    width:275px;
+   padding: 10px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #858585;
+    font-weight: 400;
+
+    border: none;
+}
+#imput-form2
+{
+    width:545px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #858585;
+    font-weight: 400;
+
+    border: none;
+}
+#imput-form3
+{
+    width: 545px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 24px;
+
+    font-weight: 400;
+    
+    border: none;
+    margin-bottom: 30px;
+}
+input[type=button] 
+{
+  padding: 18px 25px;
+  color: #fff;
+  border: none;
+  width: 180px;
+  background-color: #252525;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 108px;
+}
+
+
+
+
+
+
